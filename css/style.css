@@ -20,7 +20,8 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+    font: inherit;
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -29,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -75,7 +76,6 @@ h1{
     box-shadow: 0px 2px 2px silver;
     margin:10px;
     margin-bottom:20px;
-    padding:10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,15 +156,17 @@ header{
 }
 .profile-detail h5{
     color:rgb(50,50,40);
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
 }
 .profile-detail p{
+    padding-left: 10px;
     color:#5E5E5E;
     font-size: 16px;
     text-indent: 16px;
     line-height: 1.2;
+    letter-spacing:0.5px;
     margin-bottom: 5px;
 }
 .profile-detail div:nth-child(3){
@@ -195,14 +197,17 @@ header{
 .code-web{
     width:30%;
     border-bottom: 5px solid #F49D48;
+    padding:10px;
 }
 .code-js{
     width:30%;
     border-bottom: 5px solid #59A24B;
+    padding:10px;
 }
 .code-fontEnd{
     width:30%;
     border-bottom: 5px solid #6F6AAC;
+    padding:10px;
 }
 
 /* main - 自學經驗 */ 
@@ -229,7 +234,7 @@ header{
     margin: 10px 0px;
 }
 .work-box p{
-    padding:5px;
+    padding:5px 20px;
     font-size: 16px;
     line-height: 1.4;
     color:#5E5E5E;
@@ -251,6 +256,7 @@ header{
 .work-box button a{
     text-decoration: none;
     color:white;
+    font-size: 16px;
 }
 
 /* main - 學經歷 */ 
@@ -303,6 +309,9 @@ footer .wrap p{
     .profile-greybox{
     width: 80%;
     }
+    .box{
+        margin:10px 0;
+    }
     .experience li{
     font-size: 18px;
     }
@@ -310,5 +319,5 @@ footer .wrap p{
     margin-left: -0.5em}
     .experience ul li p{
     text-indent: 10px;
-}
+    }
 }
