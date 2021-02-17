@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* layout */
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 768px;
+    margin:0 auto;
+}
+h1{
+    font-size:26px;
+    color:rgb(50,50,40);
+}
+.grey-box{
+    width: 90%;
+    margin:10px auto;
+    background: rgba(210, 210, 210, 0.8);
+    border-radius: 25px;
+    text-align: center;
+    padding:10px;
+    margin-top:10px;
+}
+
+.box{
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px silver;
+    margin:10px;
+    margin-bottom:20px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grey-box>h2{
+    font-size:26px;
+    letter-spacing:1em;
+    color:rgb(50,50,40);
+}
+
+
+/* nav */
+.nav{
+    background:#EBEBEB;
+    height:50px;
+    width: 100%;
+    margin:0 auto;
+}
+.nav .wrap{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav>.wrap>a{
+    display: block;
+    margin: 10px;
+    width: 30px;
+    height:30px;
+}
+.nav>.wrap>a>h3{
+    text-indent: 200%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* header */ 
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    padding:10px;
+} 
+.profile-imgbox{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-greybox{
+    width: 84%;
+    margin:0 auto;
+    border: solid 2px rgba(210, 210, 210, 0.8);
+    border-radius: 25px;
+    text-align: center;
+    padding:10px;
+    margin-top:10px;
+}
+.profile-detail{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile-detail div{
+    margin:10px;  
+}
+.profile-detail div img{
+    margin-right:5px;
+}
+.profile-detail div a{
+    display: flex;
+    align-items: center;
+    vertical-align:text-top;
+    text-decoration: none;
+    color:rgb(50,50,40);
+}
+.profile-detail h5{
+    color:rgb(50,50,40);
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.profile-detail p{
+    color:#5E5E5E;
+    font-size: 16px;
+    text-indent: 16px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+.profile-detail div:nth-child(3){
+    width:70%;
+    margin:20px;
+}
+
+/* main - 程式語言 */ 
+.code{
+    display: flex;
+    flex-wrap: wrap;
+}
+.code h3{
+    font-size: 18px;
+    color:#5E5E5E;
+    margin: 10px 0px;
+    font-weight: 700;
+}
+.code ul li{
+    font-size: 16px;
+    line-height: 1.2;
+    color:#5E5E5E;
+}
+.code ul li::before {content: "\25AA"; color: #5E5E5E;
+  display: inline-block; width: 1em;
+  margin-left: 0.5em}
+
+.code-web{
+    width:30%;
+    border-bottom: 5px solid #F49D48;
+}
+.code-js{
+    width:30%;
+    border-bottom: 5px solid #59A24B;
+}
+.code-fontEnd{
+    width:30%;
+    border-bottom: 5px solid #6F6AAC;
+}
+
+/* main - 自學經驗 */ 
+.work{
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-box{
+    width:47%;
+}
+.work-box a{
+    text-decoration: none;
+    text-align: center;
+}
+.work-box a img{
+    box-shadow: 0px 2px 2px silver;
+}
+.work-box a img:hover{
+    transform: scale(1.05);
+}
+.work-box a h3{
+    font-size: 20px;
+    color:rgb(50,50,40);
+    margin: 10px 0px;
+}
+.work-box p{
+    padding:5px;
+    font-size: 16px;
+    line-height: 1.4;
+    color:#5E5E5E;
+}
+.work-box button{
+    width:25%;
+    padding:5px;
+    margin:5px;
+    justify-self: flex-end;
+    background-color: #F09E5F;
+    border:none;
+    border-radius: 5%;
+}
+.work-box button:hover{
+    background-color: #F0505F;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.work-box button a{
+    text-decoration: none;
+    color:white;
+}
+
+/* main - 學經歷 */ 
+
+.experience ul{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(50,50,40);
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.experience li{
+    width:47%;
+    font-size: 20px;
+    /* list-style-type: disc; */
+    margin:10px
+}
+.experience ul li::before {
+    content: "\25AA"; 
+    color: #5E5E5E;
+    display: inline-block; width: 0.5em;
+    margin-left: 1em}
+
+.experience ul li p{
+    font-size: 16px;
+    text-indent: 36px;
+    color:#5E5E5E;
+    padding:10px 0px;
+}
+
+/* footer */ 
+footer{
+    background:#EBEBEB;
+    height:50px;
+    width: 100%;
+    text-align: center;
+}
+footer .wrap p{
+    line-height: 50px;
+}
+
+/* ＲＷＤ */ 
+@media (max-width: 414px) {
+    .wrap {
+    width:320px;
+    }
+    .profile-imgbox,.profile-detail,.profile-detail div:nth-child(3),.grey-box,.code-web,.code-js,.code-fontEnd,.work-box,.experience li{
+    width: 100%;
+    }
+    .profile-greybox{
+    width: 80%;
+    }
+    .experience li{
+    font-size: 18px;
+    }
+    .experience ul li::before {
+    margin-left: -0.5em}
+    .experience ul li p{
+    text-indent: 10px;
+}
+}
